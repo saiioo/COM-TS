@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Umbrella Customizer Tool</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="umbrella">
+        <img id="umbrella-image" class="umb-img" src="./images/pink.png">
+        <div id="logo-container">
+          <img id="logo-image">
+        </div>
+        <div id="loading-spinner">
+          <img src="./images/loader.svg"  id="loader-ic" width="60" height="20">
+        </div>
+      </div>
+      <div class="right-div">
+        <div class="color-swatch">
+          <button class="pink" onclick="changeUmbrellaColor('pink')"></button>
+          <button class="blue" onclick="changeUmbrellaColor('blue')"></button>
+          <button class="yellow" onclick="changeUmbrellaColor('yellow')"></button>
+        </div>
+        <div class="upload-logo">
+          <p class="upload-heading">Upload Logo</p>
+          <input type="file" id="logo-file" accept="image/*" class="custom-file-input" onchange="previewLogo()">
+        </div>
+        <!-- <button class="preview-button" onclick="previewUmbrella()">Preview</button> -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
